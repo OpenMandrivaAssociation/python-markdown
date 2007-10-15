@@ -43,6 +43,6 @@ rm -rf $RPM_BUILD_ROOT
 # example 
 %doc  mdx_footnotes.py mdx_rss.py
 %py_puresitedir/%oname.py*
-
+%py_puresitedir/*egg-info
 
 
