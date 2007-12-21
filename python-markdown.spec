@@ -10,6 +10,7 @@ Release: %{release}
 Source:  http://prdownloads.sourceforge.net/%name/%oname-%version.tar.bz2
 License: GPL
 Group: Development/Python
+BuildRoot: %{_tmppath}/%{name}-buildroot
 BuildRequires: libpython-devel
 Url: http://www.freewisdom.org/projects/python-markdown/ 
 BuildArch: noarch
