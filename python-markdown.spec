@@ -1,6 +1,6 @@
 %define name python-markdown
 %define version 2.0.3
-%define release %mkrel 1
+%define release %mkrel 2
 %define oname Markdown
 
 Summary: Python implementation of the markdown text-to-HTML conversion tool
