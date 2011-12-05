@@ -1,13 +1,13 @@
 %define name python-markdown
-%define version 2.0.3
-%define release %mkrel 2
+%define version 2.1.0
+%define release %mkrel 1
 %define oname Markdown
 
 Summary: Python implementation of the markdown text-to-HTML conversion tool
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source:  http://pypi.python.org/packages/source/M/Markdown/%oname-%version.tar.gz
+Source:  http://pypi.python.org/packages/source/M/%{oname}/%{oname}-%{version}.tar.gz
 License: BSD
 Group: Development/Python
 BuildRoot: %{_tmppath}/%{name}-buildroot
@@ -25,24 +25,23 @@ allows you to write using an easy-to-read, easy-to-write plain text format,
 then convert it to structurally valid XHTML (or HTML).
 
 %prep
-%setup -q -n %oname-%version 
+%setup -q -n %{oname}-%{version} 
 
 %build
-python setup.py build
+%__python setup.py build
 
 %install
-rm -rf $RPM_BUILD_ROOT
-python setup.py install --root=$RPM_BUILD_ROOT
+%__rm -rf %{buildroot}
+%__python setup.py install --root=%{buildroot}
 
 %clean
-rm -rf $RPM_BUILD_ROOT
+%__rm -rf %{buildroot}
 
 %files 
 %defattr(-,root,root)
 # example 
 %doc docs 
-%_bindir/markdown 
+%_bindir/markdown*
 %py_puresitedir/markdown/
 %py_puresitedir/*egg-info
-
 
