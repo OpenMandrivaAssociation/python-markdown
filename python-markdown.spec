@@ -1,17 +1,15 @@
 %define name python-markdown
-%define version 2.1.0
-%define release %mkrel 2
+%define version 2.1.1
+%define release 1
 %define oname Markdown
 
 Summary: Python implementation of the markdown text-to-HTML conversion tool
 Name: %{name}
 Version: %{version}
 Release: %{release}
-Source:  http://pypi.python.org/packages/source/M/%{oname}/%{oname}-%{version}.tar.gz
+Source0:  http://pypi.python.org/packages/source/M/%{oname}/%{oname}-%{version}.tar.gz
 License: BSD
 Group: Development/Python
-BuildRoot: %{_tmppath}/%{name}-buildroot
-BuildRequires: libpython-devel
 Url: http://www.freewisdom.org/projects/python-markdown/ 
 BuildArch: noarch
 
@@ -31,13 +29,8 @@ then convert it to structurally valid XHTML (or HTML).
 PYTHONDONTWRITEBYTECODE= %__python setup.py build
 
 %install
-%__rm -rf %{buildroot}
 PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot} --record=FILE_LIST
 
-%clean
-%__rm -rf %{buildroot}
-
 %files -f FILE_LIST
-%defattr(-,root,root)
 %doc docs 
 
