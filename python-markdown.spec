@@ -34,3 +34,37 @@ PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot} --record
 %files -f FILE_LIST
 %doc docs 
 
+
+
+%changelog
+* Mon Feb 20 2012 Alexander Khrukin <akhrukin@mandriva.org> 2.1.1-1
++ Revision: 778154
+- version update 2.1.1
+
+* Mon Dec 05 2011 Lev Givon <lev@mandriva.org> 2.1.0-2
++ Revision: 737953
+- Include egg info files to satisfy reqs of other packages.
+
+* Mon Dec 05 2011 Lev Givon <lev@mandriva.org> 2.1.0-1
++ Revision: 737915
+- Update to 2.1.0.
+
+* Tue Nov 02 2010 Ahmad Samir <ahmadsamir@mandriva.org> 2.0.3-2mdv2011.0
++ Revision: 592470
+- rebuild to get correct auto requries
+
+* Sat Mar 13 2010 Michael Scherer <misc@mandriva.org> 2.0.3-1mdv2010.1
++ Revision: 518607
+- update to 2.0.3
+
+* Fri Dec 21 2007 Olivier Blin <blino@mandriva.org> 1.6a-1mdv2010.0
++ Revision: 136450
+- restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+
+  + Michael Scherer <misc@mandriva.org>
+    - add missing egg-info
+    - Import python-markdown
+
