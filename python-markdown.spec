@@ -5,9 +5,9 @@
 
 Summary: Python implementation of the markdown text-to-HTML conversion tool
 Name: %{name}
-Version: %{version}
-Release: %{release}
-Source0:  http://pypi.python.org/packages/source/M/%{oname}/%{oname}-%{version}.tar.gz
+Version: 2.3.1
+Release: 1
+Source0:  http://pypi.python.org/packages/source/M/Markdown/Markdown-%{version}.tar.gz
 License: BSD
 Group: Development/Python
 Url: http://www.freewisdom.org/projects/python-markdown/ 
@@ -67,4 +67,5 @@ PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot} --record
   + Michael Scherer <misc@mandriva.org>
     - add missing egg-info
     - Import python-markdown
+
 
