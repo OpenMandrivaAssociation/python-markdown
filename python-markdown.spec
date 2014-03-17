@@ -1,11 +1,8 @@
-%define name python-markdown
-%define version 2.1.1
-%define release 1
 %define oname Markdown
 
 Summary: Python implementation of the markdown text-to-HTML conversion tool
-Name: %{name}
-Version: 2.3.1
+Name: python-markdown
+Version: 2.4
 Release: 1
 Source0:  http://pypi.python.org/packages/source/M/Markdown/Markdown-%{version}.tar.gz
 License: BSD
@@ -67,5 +64,6 @@ PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot} --record
   + Michael Scherer <misc@mandriva.org>
     - add missing egg-info
     - Import python-markdown
+
 
 

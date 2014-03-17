@@ -1,4 +1,5 @@
 removed_sources:
   Markdown-2.1.1.tar.gz: 4a9c1a6d71a5f1087e8a46db8186a14bcfd754eb
-sources:
   Markdown-2.3.1.tar.gz: 7499171701bb20be29fb834aa02a12b6323ea88c
+sources:
+  Markdown-2.4.tar.gz: 7a4a96cd79c4e36918484c634055c4cc27bdf7d4
