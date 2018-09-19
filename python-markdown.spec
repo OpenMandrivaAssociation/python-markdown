@@ -4,12 +4,13 @@ Summary: Python implementation of the markdown text-to-HTML conversion tool
 
 Name: python-markdown
 Version: 2.4.1
-Release: 2
+Release: 3
 Source0:  http://pypi.python.org/packages/source/M/Markdown/Markdown-%{version}.tar.gz
 License: BSD
 Group: Development/Python
 Url: http://www.freewisdom.org/projects/python-markdown/ 
 BuildArch: noarch
+BuildRequires: pkgconfig(python)
 
 %description
 This is a Python implementation of John Gruber's Markdown. It is almost 
@@ -31,7 +32,7 @@ PYTHONDONTWRITEBYTECODE= %__python setup.py install --root=%{buildroot} --record
 
 %files -f FILE_LIST
 %doc docs 
-
-
+%{python3_sitelib}/markdown/__pycache__
+%{python3_sitelib}/markdown/extensions/__pycache__
 
 
