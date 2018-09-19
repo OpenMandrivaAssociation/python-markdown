@@ -45,7 +45,7 @@ find markdown -type f -name '*.py' \
   -exec sed -i -e '/^#!/{1D}' {} \;
 
 # fix line-ending
-find bin docs -type f \
+find docs -type f \
   -exec sed -i 's/\r//' {} \;
 
 cp -a . %{py2dir}
