@@ -8,9 +8,11 @@ Source:  https://files.pythonhosted.org/packages/source/M/Markdown/%oname-%versi
 License: BSD
 Group: Development/Python
 BuildRequires: pkgconfig(python2)
+BuildRequires: python2-pkg-resources
 BuildRequires: python2-nose
 BuildRequires: python2-yaml
-BuildRequires: pkgconfig(python) 
+BuildRequires: pkgconfig(python)
+BuildRequires: python-pkg-resources
 BuildRequires: python-nose
 BuildRequires: python-yaml
 Url: http://www.freewisdom.org/projects/python-markdown/ 
