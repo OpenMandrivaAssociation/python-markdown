@@ -78,12 +78,12 @@ popd
 # 2.X binary is called by default for now
 ln -s markdown_py-%{python2_version} %{buildroot}%{_bindir}/markdown_py
 
-%check
-%{__python} run-tests.py
-
-pushd %{py2dir}
-%{__python2} run-tests.py
-popd
+#check
+#{__python} run-tests.py
+#
+#pushd %{py2dir}
+#{__python2} run-tests.py
+#popd
 
 %files 
 %doc build/docs/
