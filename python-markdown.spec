@@ -86,12 +86,10 @@ ln -s markdown_py-%{python2_version} %{buildroot}%{_bindir}/markdown_py
 #popd
 
 %files 
-%doc build/docs/
 %{python_sitelib}/*
 %{_bindir}/markdown_py-%{python_version}
 
 %files -n python2-markdown
-%doc build/docs/*
 %{python2_sitelib}/*
 %{_bindir}/markdown_py
 %{_bindir}/markdown_py-%{python2_version}
