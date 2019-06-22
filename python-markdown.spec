@@ -2,7 +2,7 @@
 
 Summary: Python implementation of the markdown text-to-HTML conversion tool
 Name: python-markdown
-Version: 2.6.11
+Version:	3.1.1
 Release: 2
 Source:  https://files.pythonhosted.org/packages/source/M/Markdown/%oname-%version.tar.gz
 License: BSD
