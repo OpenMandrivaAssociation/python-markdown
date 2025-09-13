@@ -1,8 +1,8 @@
-%define oname Markdown
+%define oname markdown
 
 Summary: Python implementation of the markdown text-to-HTML conversion tool
 Name: python-markdown
-Version:	3.6
+Version:	3.9
 Release:	1
 Source:  https://files.pythonhosted.org/packages/source/M/Markdown/%oname-%version.tar.gz
 License: BSD
