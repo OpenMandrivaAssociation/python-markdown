@@ -12,6 +12,8 @@ BuildRequires: python-pkg-resources
 BuildRequires: python-setuptools
 #BuildRequires: python-nose
 BuildRequires: python-yaml
+BuildRequires: python-pip
+BuildRequires: python-wheel
 Url: https://www.freewisdom.org/projects/python-markdown/ 
 BuildArch: noarch
 
