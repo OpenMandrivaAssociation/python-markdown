@@ -2,7 +2,7 @@
 
 Summary: Python implementation of the markdown text-to-HTML conversion tool
 Name: python-markdown
-Version:	3.9
+Version:	3.10
 Release:	1
 Source:  https://files.pythonhosted.org/packages/source/M/Markdown/%oname-%version.tar.gz
 License: BSD
@@ -10,7 +10,7 @@ Group: Development/Python
 BuildRequires: pkgconfig(python)
 BuildRequires: python-pkg-resources
 BuildRequires: python-setuptools
-BuildRequires: python-nose
+#BuildRequires: python-nose
 BuildRequires: python-yaml
 Url: https://www.freewisdom.org/projects/python-markdown/ 
 BuildArch: noarch
